@@ -1,0 +1,49 @@
+# Terraform
+*.tfstate
+*.tfstate.*
+.terraform/
+terraform.tfvars
+terraform.tfvars.json
+
+# Environment files
+.env
+.env.*
+
+# Logs
+*.log
+
+# Backup files
+*.backup
+*.bak
+*.dump
+
+# PostgreSQL
+postgres_data/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+
+# Python
+__pycache__/
+*.pyc
+
+# Docker
+docker-volume/
+
+# Sensitive files
+*.pem
+*.key
+*.crt
+
+# Terraform crash logs
+crash.log
+
+# Local override files
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
