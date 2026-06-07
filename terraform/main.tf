@@ -1,7 +1,6 @@
-# Intentionally creates no AWS resources yet.
-# This file will later include:
-# - SNS topic
-# - CloudWatch alarms
-# - CloudWatch dashboard
-# - CloudTrail
-# - VPC Flow Logs
+data "aws_caller_identity" "current" {}
+
+data "aws_region" "current" {}
+
+# This phase intentionally creates no AWS resources yet.
+# This validates Terraform provider access to AWS.
