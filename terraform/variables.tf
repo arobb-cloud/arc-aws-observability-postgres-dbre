@@ -21,3 +21,8 @@ variable "owner" {
   type        = string
   default     = "arobb-cloud"
 }
+
+variable "alert_email" {
+  description = "Email address to receive SNS alerts"
+  type        = string
+}
