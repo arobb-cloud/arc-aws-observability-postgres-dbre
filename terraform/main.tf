@@ -31,3 +31,40 @@ resource "aws_cloudwatch_metric_alarm" "billing_alarm_test" {
     aws_sns_topic.alerts.arn
   ]
 }
+
+resource "aws_cloudwatch_dashboard" "main" {
+  dashboard_name = "${var.project_name}-${var.environment}-dashboard"
+
+  dashboard_body = jsonencode({
+    widgets = [
+      {
+        type   = "text"
+        x      = 0
+        y      = 0
+        width  = 24
+        height = 3
+
+        properties = {
+          markdown = "# AWS Observability Dashboard\nMonitoring foundation for DBRE/SRE portfolio project."
+        }
+      },
+      {
+        type   = "metric"
+        x      = 0
+        y      = 3
+        width  = 12
+        height = 6
+
+        properties = {
+          metrics = [
+            ["AWS/Billing", "EstimatedCharges", "Currency", "USD"]
+          ]
+          period = 21600
+          stat   = "Maximum"
+          region = "us-east-1"
+          title  = "Estimated AWS Charges"
+        }
+      }
+    ]
+  })
+}
