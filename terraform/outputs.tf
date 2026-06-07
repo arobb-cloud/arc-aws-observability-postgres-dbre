@@ -32,3 +32,13 @@ output "cloudwatch_dashboard_name" {
   description = "CloudWatch dashboard name"
   value       = aws_cloudwatch_dashboard.main.dashboard_name
 }
+
+output "cloudtrail_name" {
+  description = "CloudTrail trail name"
+  value       = aws_cloudtrail.main.name
+}
+
+output "cloudtrail_s3_bucket" {
+  description = "S3 bucket storing CloudTrail logs"
+  value       = aws_s3_bucket.cloudtrail_logs.bucket
+}
