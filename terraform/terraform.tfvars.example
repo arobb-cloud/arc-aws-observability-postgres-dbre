@@ -1,0 +1,4 @@
+aws_region   = "us-east-1"
+project_name = "arc-aws-observability-postgres-dbre"
+environment  = "dev"
+owner        = "arobb-cloud"
