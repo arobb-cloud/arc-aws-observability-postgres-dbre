@@ -70,7 +70,8 @@ resource "aws_cloudwatch_dashboard" "main" {
 }
 
 resource "aws_s3_bucket" "cloudtrail_logs" {
-  bucket = "${var.project_name}-${var.environment}-cloudtrail-${data.aws_caller_identity.current.account_id}"
+  bucket        = "${var.project_name}-${var.environment}-cloudtrail-${data.aws_caller_identity.current.account_id}"
+  force_destroy = true
 }
 
 resource "aws_s3_bucket_versioning" "cloudtrail_logs" {
