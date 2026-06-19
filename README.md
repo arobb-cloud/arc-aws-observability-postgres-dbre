@@ -177,7 +177,8 @@ Lessons Learned
 	- Monitoring is only useful when paired with actionable alerting.
 	- Backups must be validated through recovery testing.
 	- Operational documentation is critical for incident response.
-	- CI/CD pipelines improves sconsistency and reduce manual errors.
+	- Confirmed how CI/CD pipelines improve consistency and reduce the manual errors.
+	- There are formatiing shortcuts for display differences between VSCode and github repository.
 
 Future Enhancements
 ====================
