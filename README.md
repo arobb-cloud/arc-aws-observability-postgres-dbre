@@ -1,7 +1,6 @@
 
 
 AWS Observability + PostgreSQL DBRE Platform
-
 =============================================
 
 
