@@ -1,10 +1,9 @@
-=============================================
-=============================================
+
 
 AWS Observability + PostgreSQL DBRE Platform
 
 =============================================
-=============================================
+
 
 Project Overview
 ----------------
@@ -13,7 +12,7 @@ This project demonstrates a real-world Database Reliability Engineering (DBRE), 
 The objective was to build a portfolio project that reflects modern operational ownership responsibilities commonly found in Cloud Engineer, Database Reliability Engineer, Cloud Database Engineer, Platform Engineer, and Infrastructure Engineer roles.
 
 
-=======================
+
 Architecture Components
 =======================
 
@@ -66,7 +65,7 @@ Architecture Components
 		├── scripts/
 		└── terraform/
 
-=======================
+
 Key Skills Demonstrated
 =======================
 
@@ -103,7 +102,6 @@ Key Skills Demonstrated
 		CI/CD Validation Pipelines
 		Infrastructure Automation
 
-============================
 Monitoring and Observability
 ============================
 
@@ -121,7 +119,7 @@ Monitoring and Observability
 		Infrastructure visibility
 		Operational awareness
 
-===================
+
 PostgreSQL Platform
 ===================
 
@@ -136,7 +134,7 @@ PostgreSQL Platform
 	Restore procedures
 
 
-===================
+
 Backup and Recovery
 ===================
 
@@ -149,7 +147,7 @@ Backup and Recovery
 
 	A recovery test was performed to verify successful restoration of application data from backup.
 
-=================
+
 CI/CD Automation
 =================
 
@@ -161,7 +159,7 @@ CI/CD Automation
 
 		These workflows automatically execute during repository updates.
 
-====================
+
 Operational Runbooks
 ====================
 
@@ -173,7 +171,6 @@ Runbooks included:
 	Monitoring Validation
 
 
-================
 Lessons Learned
 ================
 
@@ -183,7 +180,6 @@ Lessons Learned
 	- Operational documentation is critical for incident response.
 	- CI/CD pipelines improves sconsistency and reduce manual errors.
 
-====================
 Future Enhancements
 ====================
 
@@ -198,7 +194,7 @@ Planned Version 2 enhancements:
 	Multi-Environment Terraform Deployments
 	ECS-Based PostgreSQL Deployment
 
-=======
+
 Author
 ======
 
