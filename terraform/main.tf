@@ -83,6 +83,33 @@ resource "aws_s3_bucket_versioning" "cloudtrail_logs" {
   }
 }
 
+resource "aws_s3_bucket_lifecycle_configuration" "cloudtrail_logs" {
+  bucket = aws_s3_bucket.cloudtrail_logs.id
+
+  depends_on = [
+    aws_s3_bucket_versioning.cloudtrail_logs
+  ]
+
+  rule {
+    id     = "cloudtrail-log-retention"
+    status = "Enabled"
+
+    filter {}
+
+    expiration {
+      days = 90
+    }
+
+    noncurrent_version_expiration {
+      noncurrent_days = 30
+    }
+
+    abort_incomplete_multipart_upload {
+      days_after_initiation = 7
+    }
+  }
+}
+
 resource "aws_s3_bucket_server_side_encryption_configuration" "cloudtrail_logs" {
   bucket = aws_s3_bucket.cloudtrail_logs.id
 
