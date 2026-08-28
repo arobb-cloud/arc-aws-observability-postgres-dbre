@@ -1,5 +1,6 @@
-# This phase intentionally creates no AWS resources yet.
-# This validates Terraform provider access to AWS.
+# AWS observability infrastructure for the DBRE/SRE portfolio project.
+# Resources include SNS alerting, CloudWatch monitoring,
+# CloudTrail auditing, and secure S3 log storage.
 
 resource "aws_sns_topic" "alerts" {
   name = "${var.project_name}-${var.environment}-alerts"
