@@ -8,6 +8,7 @@ terraform.tfvars.json
 # Environment files
 .env
 .env.*
+!.env.example
 
 # Logs
 *.log
@@ -16,6 +17,7 @@ terraform.tfvars.json
 *.backup
 *.bak
 *.dump
+backups/postgres/*.sql
 
 # PostgreSQL
 postgres_data/
